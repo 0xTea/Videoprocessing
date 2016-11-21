@@ -9,11 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var imageview: UIImageView!
+    var videoCameraWrapper : OpenCVWrapper!
+        var myCamera : CvVideoCamera!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.videoCameraWrapper = OpenCVWrapper(controller:self, andImageView:imageview)
+        reloadInputViews()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

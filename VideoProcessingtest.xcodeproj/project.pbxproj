@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A337528F1DE2E140008A0DE7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A337528E1DE2E130008A0DE7 /* opencv2.framework */; };
 		A39CC6DC1DDF5CE0005937BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CC6DB1DDF5CE0005937BA /* AppDelegate.swift */; };
 		A39CC6DE1DDF5CE0005937BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CC6DD1DDF5CE0005937BA /* ViewController.swift */; };
 		A39CC6E11DDF5CE0005937BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CC6DF1DDF5CE0005937BA /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		A39CC6E61DDF5CE1005937BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CC6E41DDF5CE1005937BA /* LaunchScreen.storyboard */; };
 		A39CC6F11DDF5CE1005937BA /* VideoProcessingtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CC6F01DDF5CE1005937BA /* VideoProcessingtestTests.swift */; };
 		A39CC6FC1DDF5CE1005937BA /* VideoProcessingtestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CC6FB1DDF5CE1005937BA /* VideoProcessingtestUITests.swift */; };
+		A39CC70D1DDF5DD7005937BA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39CC70C1DDF5DD7005937BA /* AssetsLibrary.framework */; };
+		A39CC71C1DDF625E005937BA /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A39CC71B1DDF625E005937BA /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A337528E1DE2E130008A0DE7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		A39CC6D81DDF5CE0005937BA /* VideoProcessingtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoProcessingtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39CC6DB1DDF5CE0005937BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39CC6DD1DDF5CE0005937BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,11 @@
 		A39CC6F71DDF5CE1005937BA /* VideoProcessingtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoProcessingtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39CC6FB1DDF5CE1005937BA /* VideoProcessingtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessingtestUITests.swift; sourceTree = "<group>"; };
 		A39CC6FD1DDF5CE1005937BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39CC70C1DDF5DD7005937BA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A39CC7111DDF6143005937BA /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		A39CC7121DDF61A3005937BA /* VideoProcessingtest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoProcessingtest-Bridging-Header.h"; sourceTree = "<group>"; };
+		A39CC71B1DDF625E005937BA /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		A39CC7211DDF6574005937BA /* UIImage+OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A337528F1DE2E140008A0DE7 /* opencv2.framework in Frameworks */,
+				A39CC70D1DDF5DD7005937BA /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 				A39CC6EF1DDF5CE1005937BA /* VideoProcessingtestTests */,
 				A39CC6FA1DDF5CE1005937BA /* VideoProcessingtestUITests */,
 				A39CC6D91DDF5CE0005937BA /* Products */,
+				A39CC7091DDF5DB3005937BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +115,10 @@
 				A39CC6E21DDF5CE1005937BA /* Assets.xcassets */,
 				A39CC6E41DDF5CE1005937BA /* LaunchScreen.storyboard */,
 				A39CC6E71DDF5CE1005937BA /* Info.plist */,
+				A39CC7111DDF6143005937BA /* OpenCVWrapper.h */,
+				A39CC7121DDF61A3005937BA /* VideoProcessingtest-Bridging-Header.h */,
+				A39CC71B1DDF625E005937BA /* OpenCVWrapper.mm */,
+				A39CC7211DDF6574005937BA /* UIImage+OpenCV.h */,
 			);
 			path = VideoProcessingtest;
 			sourceTree = "<group>";
@@ -123,6 +139,15 @@
 				A39CC6FD1DDF5CE1005937BA /* Info.plist */,
 			);
 			path = VideoProcessingtestUITests;
+			sourceTree = "<group>";
+		};
+		A39CC7091DDF5DB3005937BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A337528E1DE2E130008A0DE7 /* opencv2.framework */,
+				A39CC70C1DDF5DD7005937BA /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +219,7 @@
 					A39CC6D71DDF5CE0005937BA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = X7CQMJR7WJ;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					A39CC6EB1DDF5CE1005937BA = {
@@ -264,6 +290,7 @@
 			files = (
 				A39CC6DE1DDF5CE0005937BA /* ViewController.swift in Sources */,
 				A39CC6DC1DDF5CE0005937BA /* AppDelegate.swift in Sources */,
+				A39CC71C1DDF625E005937BA /* OpenCVWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -413,11 +440,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X7CQMJR7WJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = VideoProcessingtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.za.test.VideoProcessingtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoProcessingtest/VideoProcessingtest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,11 +460,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X7CQMJR7WJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = VideoProcessingtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.za.test.VideoProcessingtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoProcessingtest/VideoProcessingtest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -512,6 +552,7 @@
 				A39CC7021DDF5CE1005937BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A39CC7031DDF5CE1005937BA /* Build configuration list for PBXNativeTarget "VideoProcessingtestTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +561,7 @@
 				A39CC7051DDF5CE1005937BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A39CC7061DDF5CE1005937BA /* Build configuration list for PBXNativeTarget "VideoProcessingtestUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +570,7 @@
 				A39CC7081DDF5CE1005937BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
